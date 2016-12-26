@@ -8,8 +8,12 @@ console.log(onlyEven([10,15,20,25,30,35]));
 
 
 function onlyOneWord (array) {
-  // your code here
+  filtered = array.filter((element)=> {
+    return (element.split(' '))
+  })
+  return filtered
 };
+console.log(onlyOneWord(['return', 'phrases', 'with one word']));
 
 function positiveRowsOnly (array) {
   // your code here
