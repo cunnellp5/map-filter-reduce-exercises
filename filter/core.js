@@ -9,18 +9,25 @@ console.log(onlyEven([10,15,20,25,30,35]));
 
 function onlyOneWord (array) {
   filtered = array.filter((element)=> {
-    return (element.split(' '))
+    return !(element.includes(' '))
   })
   return filtered
 };
 console.log(onlyOneWord(['return', 'phrases', 'with one word']));
 
 function positiveRowsOnly (array) {
-  // your code here
+  filtered = array.filter((element)=> {
+    return (element > 0)
+  })
+  return filtered
 };
+console.log(positiveRowsOnly([[1, 10,-100], [2,-20, 200], [3, 30, 300]]));
+
 
 function allSameVowels (array) {
-  // your code here
+  filtered = array.filter((element)=> {
+    
+  })
 };
 
 module.exports = {
