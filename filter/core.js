@@ -17,34 +17,25 @@ console.log(onlyOneWord(['return', 'phrases', 'with one word']));
 
 
 function positiveRowsOnly (array) {
-  emptyArr = [];
-
-  mapped = array.map(function(element) {
-    return element.filter(function(element) {
-    })
-    emptyArr.push(element)
+  mapped = array.map(function(element){
+    return arr = (element.filter(function(poop){
+      return poop > 0
+    }))
   })
- // filtered = array.filter((element)=>  {
- //   filt = element.filter((element)=> {
- //     return element
- //   })
- // })
- return emptyArr
+  return [arr]
 };
 console.log(positiveRowsOnly([[1, 10,-100], [2,-20, 200], [3, 30, 300]]));
 //can do map then filter
-// can also do for each and set bool = true and check
+// can also do for each and set bool = true and check`
 
 
 function allSameVowels (array) {
-  var newArr = [];
-  for (var i = 0; i < array.length; i++) {
-    newArr.push(array[i].split(""))
-  }
-  return newArr
+  
 };
-console.log(allSameVowels(['racecar', 'amalgam', 'oligopoly', 'zoom']));
-
+// console.log(allSameVowels(['racecar', 'amalgam', 'oligopoly', 'zoom']));
+//loop thru each word
+//check vowel
+// if more than one vowel present return false
 
 module.exports = {
   onlyEven: onlyEven,
