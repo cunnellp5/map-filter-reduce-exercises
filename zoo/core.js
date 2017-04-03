@@ -13,7 +13,7 @@ function entryCalculator (entrants) {
 };
 
 function schedule (dayName) {
-  
+
 };
 
 function animalCount (species) {
