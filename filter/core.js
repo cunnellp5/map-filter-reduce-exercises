@@ -25,17 +25,17 @@ function positiveRowsOnly (array) {
   return [arr]
 };
 console.log(positiveRowsOnly([[1, 10,-100], [2,-20, 200], [3, 30, 300]]));
-//can do map then filter
-// can also do for each and set bool = true and check`
 
+
+
+var array = ['racecar', 'amalgam', 'oligopoly', 'zoom'];
 
 function allSameVowels (array) {
   
 };
-// console.log(allSameVowels(['racecar', 'amalgam', 'oligopoly', 'zoom']));
-//loop thru each word
-//check vowel
-// if more than one vowel present return false
+console.log(allSameVowels(array));
+
+
 
 module.exports = {
   onlyEven: onlyEven,

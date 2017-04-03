@@ -1,9 +1,19 @@
+data = require('./data');
+
 function entryCalculator (entrants) {
-  // your code here
+  if (entrants == undefined) {
+    return 0
+  } else if (Object.keys(entrants).length === 0) {
+    return 0
+  } else if (entrants.Adult == 0 && entrants.Child == 0 && entrants.Senior == 0) {
+    return 0;
+  } else if (entrants.Adult > 0 || entrants.Child > 0 || entrants.Senior > 0) {
+    return (entrants.Adult * data.prices.Adult + entrants.Child * data.prices.Child + entrants.Senior * data.prices.Senior)
+  }
 };
 
 function schedule (dayName) {
-  // your code here
+  
 };
 
 function animalCount (species) {

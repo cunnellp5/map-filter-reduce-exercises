@@ -1,6 +1,6 @@
 function sum (array) {
   return array.reduce(function(a, b){
-    return a += b
+    return a + b
   })
 };
 console.log(sum([5,6,7]));
@@ -27,13 +27,22 @@ function objectify (array) {
 };
 console.log(objectify(matrix));
 
-var result = { 'Thundercats': '80s',
-               'The Powerpuff Girls': '90s',
-               'Sealab 2021': '00s' };
 
+var array  = [30, 48, 11, 5, 32];
 function luckyNumbers (array) {
-  // your code here
+  var fuckyou = array.pop()
+  return array.reduce(function(a,b){
+    return a + b + ", "
+  },"Your lucky numbers are: ") + "and " + fuckyou
 };
+console.log(luckyNumbers(array));
+
+var result = 'Your lucky numbers are: 30, 48, 11, 5, and 32';
+
+
+
+
+
 
 module.exports = {
   sum: sum,
